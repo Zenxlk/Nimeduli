@@ -5,39 +5,18 @@
   </div>
   <nav>
     <ul>
-      <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
-      <li><a routerLink="/mission" routerLinkActive="active">Misión</a></li>
-      <li><a routerLink="/vision" routerLinkActive="active">Visión</a></li>
-      <li>
-        <a routerLink="/objectives" routerLinkActive="active">Objetivos</a>
-      </li>
-      <li>
-        <a routerLink="/strategies" routerLinkActive="active">Estrategias</a>
-      </li>
-      <li><a routerLink="/products" routerLinkActive="active">Productos</a></li>
-      <li><a routerLink="/clients" routerLinkActive="active">Clientes</a></li>
-      <li><a routerLink="/creators" routerLinkActive="active">Creadores</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+      <li><button (click)="navigateTo('/')">Inicio</button></li>
+      <li><button (click)="navigateTo('/mission')">Misión</button></li>
+      <li><button (click)="navigateTo('/vision')">Visión</button></li>
+      <li><button (click)="navigateTo('/objectives')">Objetivos</button></li>
+      <li><button (click)="navigateTo('/strategies')">Estrategias</button></li>
+      <li><button (click)="navigateTo('/products')">Productos</button></li>
+      <li><button (click)="navigateTo('/clients')">Clientes</button></li>
+      <li><button (click)="navigateTo('/creators')">Creadores</button></li>
+      <li><button (click)="navigateTo('/contact')">Contacto</button></li>
     </ul>
   </nav>
 </header>
 <main>
   <router-outlet></router-outlet>
 </main>
-<footer>
-  <div class="footer-content">
-    <p>© 2023 Nimeduli - Todos los derechos reservados</p>
-    <p>Diseñado con amor por Nimeduli Creations</p>
-    <nav>
-      <ul>
-        <li>
-          <a href="https://instagram.com/nimeduli28peluches" target="_blank"
-            >Instagram</a
-          >
-        </li>
-        <li><a href="mailto:lemilior2811@gmail.com">Correo</a></li>
-        <li><a href="tel:+573204437076">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
