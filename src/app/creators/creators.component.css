@@ -1,0 +1,33 @@
+.creators {
+  text-align: center;
+  padding: 2em;
+}
+
+.creator-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.creator {
+  width: 250px;
+  background-color: #fff7eb;
+  border: 2px solid #e0d3c0;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.creator img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.creator h3 {
+  margin: 0.5em 0;
+  color: #a87556;
+}
+
+.creator p {
+  color: #6d5b48;
+}

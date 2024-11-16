@@ -1,0 +1,11 @@
+<section class="products">
+  <h2>Productos</h2>
+  <p>Descubre nuestra colección de peluches tejidos a mano, perfectos para todas las edades.</p>
+  <div class="product-list">
+    <div class="product" *ngFor="let product of products">
+      <img [src]="product.image" alt="{{ product.name }}" />
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+</section>

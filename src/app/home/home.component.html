@@ -1,0 +1,69 @@
+<div class="home-container">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenidos a Nimeduli</h1>
+      <p>Peluches tejidos a mano, hechos con amor y dedicación.</p>
+      <button class="cta-button">Descubre más</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero-image-placeholder.jpg" alt="Peluches Nimeduli">
+    </div>
+  </section>
+
+  <!-- Tabs Section -->
+  <section class="tabs">
+    <h2>¿Quiénes somos?</h2>
+    <div class="tabs-container">
+      <button (click)="showSection('mision')" [class.active]="activeTab === 'mision'">Misión</button>
+      <button (click)="showSection('vision')" [class.active]="activeTab === 'vision'">Visión</button>
+      <button (click)="showSection('objetivos')" [class.active]="activeTab === 'objetivos'">Objetivos</button>
+      <button (click)="showSection('estrategias')" [class.active]="activeTab === 'estrategias'">Estrategias</button>
+    </div>
+    <div class="tab-content">
+      <div [class.active]="activeTab === 'mision'" class="fade">
+        <p>
+          Nimeduli es una empresa dedicada a la elaboración, comercialización de
+          peluches tejidos a mano, con altos estándares de calidad, para poder
+          satisfacer los sueños de nuestros clientes.
+        </p>
+      </div>
+      <div [class.active]="activeTab === 'vision'" class="fade">
+        <p>
+          Buscamos establecernos como una empresa reconocida a nivel
+          departamental en el arte de las manualidades hechas a mano,
+          resaltando en la calidad, innovación y compromiso, logrando hacer
+          realidad los sueños de nuestros clientes para generar lazos de
+          confianza.
+        </p>
+      </div>
+      <div [class.active]="activeTab === 'objetivos'" class="fade">
+        <ul>
+          <li>Hacer que nuestra marca sea reconocida por la calidad de nuestros productos.</li>
+          <li>Aumentar las ventas y las utilidades.</li>
+          <li>Fidelizar los clientes.</li>
+          <li>Generar empleo en Santander, especialmente a las madres cabeza de familia.</li>
+        </ul>
+      </div>
+      <div [class.active]="activeTab === 'estrategias'" class="fade">
+        <ul>
+          <li>Publicidad y nuevos diseños.</li>
+          <li>Usando Marketing – redes sociales.</li>
+          <li>Envíos Gratis - Obsequio por compras mayores (llavero).</li>
+          <li>Capacitando a las madres y comprando sus productos.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="clients">
+    <h2>Nuestros Clientes</h2>
+    <div class="client-list">
+      <div class="client" *ngFor="let client of clients">
+        <img [src]="client.image" alt="{{ client.name }}">
+        <p>{{ client.name }}</p>
+      </div>
+    </div>
+  </section>
+</div>

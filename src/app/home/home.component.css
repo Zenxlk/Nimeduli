@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f4f1; /* Fondo beige claro */
+  color: #4a4a4a; /* Texto en tono gris suave */
+  box-sizing: border-box;
+}
+
+.home-container {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background: #fff7eb; /* Fondo beige cálido */
+  border-bottom: 3px solid #e0d3c0; /* Borde elegante */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  color: #a87556; /* Marrón cálido */
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  color: #6d5b48; /* Marrón claro */
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  background: #a87556; /* Marrón cálido */
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content button:hover {
+  background: #8a5f3e; /* Marrón oscuro */
+}
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Tabs Section */
+.tabs {
+  padding: 2em;
+  text-align: center;
+}
+
+.tabs h2 {
+  color: #4a4a4a; /* Texto gris cálido */
+  margin-bottom: 1em;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tabs-container button {
+  cursor: pointer;
+  background-color: #e0d3c0; /* Beige oscuro */
+  color: #4a4a4a; /* Texto gris oscuro */
+  padding: 10px 20px;
+  border: 1px solid #d3bca0; /* Borde beige más oscuro */
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs-container button:hover {
+  background-color: #d3bca0; /* Marrón más oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+.tabs-container button.active {
+  background-color: #a87556; /* Marrón cálido */
+  color: #fff;
+}
+
+/* Tab Content Section */
+.tab-content {
+  margin-top: 1em;
+  padding: 20px;
+  background-color: #fff7eb; /* Fondo beige cálido */
+  border: 2px solid #e0d3c0; /* Borde beige oscuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-content div {
+  display: none; /* Ocultar todas las secciones por defecto */
+}
+
+.tab-content div.active {
+  display: block; /* Mostrar solo la sección activa */
+}
+
+.tab-content p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #4a4a4a; /* Gris cálido */
+  margin-bottom: 15px;
+}
+
+.tab-content ul {
+  padding-left: 20px;
+  list-style-type: square; /* Listas con íconos elegantes */
+}
+
+.tab-content ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #6d5b48; /* Marrón claro */
+  transition: color 0.2s ease-in-out;
+}
+
+.tab-content ul li:hover {
+  color: #a87556; /* Marrón cálido */
+}
+
+/* Clients Section */
+.clients {
+  padding: 2em;
+  text-align: center;
+  background-color: #f9f4f1;
+}
+
+.clients h2 {
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.client {
+  width: 150px;
+  text-align: center;
+}
+
+.client img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #e0d3c0; /* Beige oscuro */
+}
+
+.client p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #4a4a4a;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .tabs-container {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .tabs-container button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  .tab-content {
+    padding: 15px;
+  }
+}
+
+
+/* estilos de Li */
+
+/* List Container */
+ul {
+  list-style: none; /* Elimina los puntos predeterminados */
+  padding: 0;
+  margin: 0;
+}
+
+/* List Items */
+ul li {
+  display: flex;
+  align-items: center; /* Alinea el icono con el texto */
+  gap: 10px; /* Espaciado entre el icono y el texto */
+  font-size: 1.1em; /* Tamaño del texto */
+  color: #6d5b48; /* Marrón claro */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #fff7eb; /* Fondo beige claro */
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  transition: all 0.3s ease-in-out; /* Transición suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+/* Hover Effect */
+ul li:hover {
+  background-color: #e0d3c0; /* Beige oscuro */
+  color: #a87556; /* Marrón cálido */
+  transform: translateY(-3px); /* Elevación al pasar el mouse */
+}
+
+/* Icon for List Items */
+ul li::before {
+  content: '✔'; /* Icono de check */
+  font-size: 1.2em;
+  color: #a87556; /* Marrón cálido */
+  display: inline-block;
+  margin-right: 10px;
+}

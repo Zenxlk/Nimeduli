@@ -1,0 +1,11 @@
+<section class="creators">
+  <h2>Creadores</h2>
+  <p>Conoce a las talentosas manos detrás de cada peluche tejido.</p>
+  <div class="creator-list">
+    <div class="creator" *ngFor="let creator of creators">
+      <img [src]="creator.image" alt="{{ creator.name }}" />
+      <h3>{{ creator.name }}</h3>
+      <p>{{ creator.bio }}</p>
+    </div>
+  </div>
+</section>

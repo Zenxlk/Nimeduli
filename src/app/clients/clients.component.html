@@ -1,0 +1,10 @@
+<section class="clients">
+  <h2>Nuestros Clientes</h2>
+  <p>Agradecemos a todos nuestros clientes por confiar en nuestros productos únicos y personalizados.</p>
+  <div class="client-list">
+    <div class="client" *ngFor="let client of clients">
+      <img [src]="client.image" alt="{{ client.name }}" />
+      <p>{{ client.name }}</p>
+    </div>
+  </div>
+</section>

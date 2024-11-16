@@ -1,0 +1,43 @@
+<header>
+  <div class="logo">
+    <h1>Nimeduli</h1>
+    <p>Peluches Tejidos a Mano</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
+      <li><a routerLink="/mission" routerLinkActive="active">Misión</a></li>
+      <li><a routerLink="/vision" routerLinkActive="active">Visión</a></li>
+      <li>
+        <a routerLink="/objectives" routerLinkActive="active">Objetivos</a>
+      </li>
+      <li>
+        <a routerLink="/strategies" routerLinkActive="active">Estrategias</a>
+      </li>
+      <li><a routerLink="/products" routerLinkActive="active">Productos</a></li>
+      <li><a routerLink="/clients" routerLinkActive="active">Clientes</a></li>
+      <li><a routerLink="/creators" routerLinkActive="active">Creadores</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <div class="footer-content">
+    <p>© 2023 Nimeduli - Todos los derechos reservados</p>
+    <p>Diseñado con amor por Nimeduli Creations</p>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://instagram.com/nimeduli28peluches" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li><a href="mailto:nimeduli@example.com">Correo</a></li>
+        <li><a href="/privacy-policy">Política de Privacidad</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
