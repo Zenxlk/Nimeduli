@@ -12,9 +12,9 @@ export class HomeComponent {
   activeTab: string = 'mision';
 
   clients = [
-    { name: 'Cliente 1', image: 'assets/client1.jpg' },
-    { name: 'Cliente 2', image: 'assets/client2.jpg' },
-    { name: 'Cliente 3', image: 'assets/client3.jpg' },
+    { name: 'Cliente 1', image: 'assets/img/client1.jpg' },
+    { name: 'Cliente 2', image: 'assets/img/client2.jpg' },
+    { name: 'Cliente 3', image: 'assets/img/client3.jpg' },
   ];
 
 
