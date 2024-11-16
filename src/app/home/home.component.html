@@ -7,7 +7,7 @@
       <button class="cta-button">Descubre más</button>
     </div>
     <div class="hero-image">
-      <img src="assets/hero-image-placeholder.jpg" alt="Peluches Nimeduli">
+      <img src="assets/img/portada.png" alt="Portada" />
     </div>
   </section>
 
@@ -15,10 +15,30 @@
   <section class="tabs">
     <h2>¿Quiénes somos?</h2>
     <div class="tabs-container">
-      <button (click)="showSection('mision')" [class.active]="activeTab === 'mision'">Misión</button>
-      <button (click)="showSection('vision')" [class.active]="activeTab === 'vision'">Visión</button>
-      <button (click)="showSection('objetivos')" [class.active]="activeTab === 'objetivos'">Objetivos</button>
-      <button (click)="showSection('estrategias')" [class.active]="activeTab === 'estrategias'">Estrategias</button>
+      <button
+        (click)="showSection('mision')"
+        [class.active]="activeTab === 'mision'"
+      >
+        Misión
+      </button>
+      <button
+        (click)="showSection('vision')"
+        [class.active]="activeTab === 'vision'"
+      >
+        Visión
+      </button>
+      <button
+        (click)="showSection('objetivos')"
+        [class.active]="activeTab === 'objetivos'"
+      >
+        Objetivos
+      </button>
+      <button
+        (click)="showSection('estrategias')"
+        [class.active]="activeTab === 'estrategias'"
+      >
+        Estrategias
+      </button>
     </div>
     <div class="tab-content">
       <div [class.active]="activeTab === 'mision'" class="fade">
@@ -31,18 +51,23 @@
       <div [class.active]="activeTab === 'vision'" class="fade">
         <p>
           Buscamos establecernos como una empresa reconocida a nivel
-          departamental en el arte de las manualidades hechas a mano,
-          resaltando en la calidad, innovación y compromiso, logrando hacer
-          realidad los sueños de nuestros clientes para generar lazos de
-          confianza.
+          departamental en el arte de las manualidades hechas a mano, resaltando
+          en la calidad, innovación y compromiso, logrando hacer realidad los
+          sueños de nuestros clientes para generar lazos de confianza.
         </p>
       </div>
       <div [class.active]="activeTab === 'objetivos'" class="fade">
         <ul>
-          <li>Hacer que nuestra marca sea reconocida por la calidad de nuestros productos.</li>
+          <li>
+            Hacer que nuestra marca sea reconocida por la calidad de nuestros
+            productos.
+          </li>
           <li>Aumentar las ventas y las utilidades.</li>
           <li>Fidelizar los clientes.</li>
-          <li>Generar empleo en Santander, especialmente a las madres cabeza de familia.</li>
+          <li>
+            Generar empleo en Santander, especialmente a las madres cabeza de
+            familia.
+          </li>
         </ul>
       </div>
       <div [class.active]="activeTab === 'estrategias'" class="fade">
@@ -61,7 +86,7 @@
     <h2>Nuestros Clientes</h2>
     <div class="client-list">
       <div class="client" *ngFor="let client of clients">
-        <img [src]="client.image" alt="{{ client.name }}">
+        <img [src]="client.image" alt="{{ client.name }}" />
         <p>{{ client.name }}</p>
       </div>
     </div>

@@ -14,14 +14,14 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'mission', component: MissionComponent },
-  { path: 'vision', component: VisionComponent },
-  { path: 'objectives', component: ObjectivesComponent },
-  { path: 'strategies', component: StrategiesComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: 'clients', component: ClientsComponent },
-  { path: 'creators', component: CreatorsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: '../mission', component: MissionComponent },
+  { path: './vision', component: VisionComponent },
+  { path: './objectives', component: ObjectivesComponent },
+  { path: './strategies', component: StrategiesComponent },
+  { path: './products', component: ProductsComponent },
+  { path: './clients', component: ClientsComponent },
+  { path: './creators', component: CreatorsComponent },
+  { path: './contact', component: ContactComponent },
 ];
 
 @NgModule({

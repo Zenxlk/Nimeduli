@@ -113,3 +113,14 @@ footer nav ul li a:hover {
     align-items: center;
   }
 }
+
+a[href^="tel"] {
+  color: #00796b; /* Color del texto */
+  text-decoration: none; /* Quita subrayado */
+  font-weight: bold; /* Resalta el texto */
+  transition: color 0.3s ease-in-out;
+}
+
+a[href^="tel"]:hover {
+  color: #004d40; /* Color al pasar el mouse */
+}
