@@ -9,23 +9,22 @@ import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
 import { CreatorsComponent } from './creators/creators.component';
 import { ContactComponent } from './contact/contact.component';
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '../mission', component: MissionComponent },
-  { path: './vision', component: VisionComponent },
-  { path: './objectives', component: ObjectivesComponent },
-  { path: './strategies', component: StrategiesComponent },
-  { path: './products', component: ProductsComponent },
-  { path: './clients', component: ClientsComponent },
-  { path: './creators', component: CreatorsComponent },
-  { path: './contact', component: ContactComponent },
+  { path: 'mission', component: MissionComponent },
+  { path: 'vision', component: VisionComponent },
+  { path: 'objectives', component: ObjectivesComponent },
+  { path: 'strategies', component: StrategiesComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'clients', component: ClientsComponent },
+  { path: 'creators', component: CreatorsComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes),],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+
