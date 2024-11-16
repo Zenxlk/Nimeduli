@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
 import { CreatorsComponent } from './creators/creators.component';
 import { ContactComponent } from './contact/contact.component';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const routes: Routes = [
@@ -24,7 +25,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),],
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
