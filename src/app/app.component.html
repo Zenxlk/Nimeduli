@@ -6,10 +6,6 @@
   <nav>
     <ul>
       <li><button (click)="navigateTo('/')">Inicio</button></li>
-      <li><button (click)="navigateTo('/mission')">Misión</button></li>
-      <li><button (click)="navigateTo('/vision')">Visión</button></li>
-      <li><button (click)="navigateTo('/objectives')">Objetivos</button></li>
-      <li><button (click)="navigateTo('/strategies')">Estrategias</button></li>
       <li><button (click)="navigateTo('/products')">Productos</button></li>
       <li><button (click)="navigateTo('/clients')">Clientes</button></li>
       <li><button (click)="navigateTo('/creators')">Creadores</button></li>
@@ -20,3 +16,33 @@
 <main>
   <router-outlet></router-outlet>
 </main>
+<footer>
+  <div class="footer-content">
+    <div class="footer-info">
+      <p>© 2023 Nimeduli - Todos los derechos reservados</p>
+      <p>Desing by ZenDev</p>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li>
+          <a href="https://instagram.com/nimeduli28peluches" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="mailto:lemilior2811@gmail.com">Correo</a>
+        </li>
+        <li>
+          <a href="tel:+573204437076">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer-creators">
+      <p><strong>Creadores:</strong></p>
+      <p>
+        Jorge Jair Mendez Vargas, Andrea Martínez Díaz, Rogers Fabian Lesmes
+        Franco, Elvis Ricardo Linares Amador
+      </p>
+    </div>
+  </div>
+</footer>

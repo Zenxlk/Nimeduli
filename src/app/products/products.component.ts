@@ -11,9 +11,9 @@ import { CommonModule } from '@angular/common';
 
 
 export class ProductsComponent {
-  products = [
-    { name: 'Cliente 1', image: 'assets/client1.jpg' , description: ''},
-    { name: 'Cliente 2', image: 'assets/client2.jpg' , description: '' },
-    { name: 'Cliente 3', image: 'assets/client3.jpg' , description: ''},
-  ];
+  products = Array.from({ length: 5 }, (_, i) => ({
+    name: `Producto ${i + 1}`,
+    image: `assets/img/product${i + 1}.jpg`,
+    description : ""
+  }));
 }

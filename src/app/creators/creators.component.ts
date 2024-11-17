@@ -9,9 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './creators.component.css'
 })
 export class CreatorsComponent {
-  creators = [
-    { name: 'Cliente 1', bio: 'assets/client1.jpg' , image: '' },
-    { name: 'Cliente 2', bio: 'assets/client2.jpg' , image: '' },
-    { name: 'Cliente 3', bio: 'assets/client3.jpg' , image: ''},
-  ];
+  creators = Array.from({ length: 4 }, (_, i) => ({
+    name: `Devpop ${i + 1}`,
+    image: `assets/img/team${i + 1}.jpg`,
+    bio : ""
+  }));
 }
