@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CreatorsComponent {
   creators = Array.from({ length: 4 }, (_, i) => ({
-    name: `Devpop ${i + 1}`,
+    name: `Miembro ${i + 1}`,
     image: `assets/img/team${i + 1}.jpg`,
     bio : ""
   }));
